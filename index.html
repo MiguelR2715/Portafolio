@@ -91,13 +91,7 @@ img#photo-image {
 
 img#photo-image:hover {
     transform: scale(1.05);
-}
-
-form input, form label {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
+} 
 
 input[type="submit"] {
     background-color: #0077cc;
@@ -148,6 +142,14 @@ input[type="submit"]:hover {
         width: 100%;
         height: auto;
     }
+
+iframe {
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 100%;
+    }
+
 }
 </style>
 
@@ -236,34 +238,16 @@ input[type="submit"]:hover {
             </ul>
 
      <section>
-        <h3>Formulario</h3>
-        <p class="descripcion" > Este es un formulario que podras rellenar con tu informacion para que te pueda contactar </p>
-         <iframe src=<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcTvw1HUXJQLcQhzmmYdap8KaY1HAzbyoX9AxeQShWi7fqHg/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-         <form method="post" action="/">
-          <fieldset>
-            <legend>Informacion Personal</legend>
-            <div>
-            <label> Nombre: 
-            <input type="text" id="name" name="name" placeholder="" required>
-            </label>
-            </div>
-            <label> Email: 
-            <input type="email" id="Email" name="Email" placeholder="" required>
-            </label>
-            <div>
-            <label> Edad: 
-            <input type="number" id="Edad" name="Edad" placeholder="" required>
-            </label>
-            </div>
-            <label> Telefono: 
-            <input type="tel" id="Telefono" name="Telefono" placeholder="" required pattern="[0-9]{9}">
-            </form>
-            </label>
-            
-            <input type="submit" value="Enviar contacto"  >
-            
-         </fieldset>
-         </form>
+        <h2>Formulario de contacto</h2>
+  <p style="text-align: center;">Llena este formulario para que pueda contactarte:</p>
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfcTvw1HUXJQLcQhzmmYdap8KaY1HAzbyoX9AxeQShWi7fqHg/viewform?embedded=true" 
+    height="850" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0" 
+    loading="lazy"
+  >Cargando…</iframe>
         
       </section>
 
