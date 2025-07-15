@@ -141,10 +141,6 @@ iframe {
 </style>
 
 
- 
-
-
-
 
 
 
@@ -250,7 +246,7 @@ iframe {
 
       <footer>
          <div>
-          <small>Copyright 2025-Portafolio de miguel</small><br>
+         <small id="copyright">© 2025 - Portafolio de Miguel</small><br>
           <a class="link" href="mailto:miguelanrodriguez1509@gmail.com">Enviame un correo</a>
             <a class="link" href="tel:+57 3185852178">Llamame</a>   
          </div>
@@ -264,11 +260,7 @@ iframe {
 
  
 <script>
-  document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("¡Gracias por enviar tu información! Te contactaré pronto.");
-    this.reset();
-  });
+ // Formulario eliminado, no es necesario capturar el evento
 
   document.getElementById("theme-toggle").addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
